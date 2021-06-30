@@ -638,11 +638,6 @@
                               <Font name="Arial Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Button layoutX="79.0" layoutY="511.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="170.0" style="-fx-background-color: #3c6382;" text="View Profile" textFill="WHITE">
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Button>
                         <TableView layoutX="309.0" layoutY="68.0" prefHeight="424.0" prefWidth="561.0">
                            <columns>
                               <TableColumn prefWidth="50.0" text="No:" />
@@ -659,12 +654,12 @@
                               <Font size="16.0" />
                            </font>
                         </Button>
-                        <Button layoutX="556.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
+                        <Button layoutX="27.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>
                         </Button>
-                        <Button layoutX="747.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #48dbfb;" text="Update" textFill="WHITE">
+                        <Button layoutX="183.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #48dbfb;" text="Update" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -756,12 +751,7 @@
                               <Font size="16.0" />
                            </font>
                         </Button>
-                        <Button layoutX="27.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Button>
-                        <Button layoutX="181.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #48dbfb;" text="Update" textFill="WHITE">
+                        <Button layoutX="27.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="253.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -1278,12 +1268,7 @@
                               <Font size="16.0" />
                            </font>
                         </Button>
-                        <Button layoutX="27.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
-                           <font>
-                              <Font size="16.0" />
-                           </font>
-                        </Button>
-                        <Button layoutX="181.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #48dbfb;" text="Update" textFill="WHITE">
+                        <Button layoutX="27.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="255.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
                            <font>
                               <Font size="16.0" />
                            </font>
@@ -1858,14 +1843,14 @@
                <content>
                   <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <Label layoutX="24.0" layoutY="22.0" text="Add New teacher" textFill="#3c6382">
+                        <Label layoutX="17.0" layoutY="52.0" text="Add New Teacher:" textFill="#3c6382">
                            <font>
                               <Font name="Arial Bold" size="24.0" />
                            </font>
                         </Label>
-                        <Pane layoutX="70.0" layoutY="66.0" prefHeight="452.0" prefWidth="746.0" style="-fx-border-style: dashed; -fx-background-color: white;">
+                        <Pane layoutX="70.0" layoutY="120.0" prefHeight="266.0" prefWidth="746.0" style="-fx-border-style: dashed; -fx-background-color: white;">
                            <children>
-                              <Label layoutX="64.0" layoutY="12.0" text="Student Details:" textFill="#0a3d62">
+                              <Label layoutX="27.0" layoutY="12.0" text="Teachers details:" textFill="#0a3d62">
                                  <font>
                                     <Font name="Arial Bold" size="20.0" />
                                  </font>
@@ -1876,103 +1861,39 @@
                                  </font>
                               </Label>
                               <TextField layoutX="25.0" layoutY="79.0" prefHeight="25.0" prefWidth="188.0" promptText="Fullname" />
-                              <Separator layoutX="246.0" layoutY="14.0" orientation="VERTICAL" prefHeight="378.0" prefWidth="9.0" />
-                              <Separator layoutX="493.0" layoutY="14.0" orientation="VERTICAL" prefHeight="387.0" prefWidth="5.0" />
-                              <Label layoutX="293.0" layoutY="12.0" text="Parent Details:" textFill="#0a3d62">
-                                 <font>
-                                    <Font name="Arial Bold" size="20.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="554.0" layoutY="14.0" text="Dormitory Details:" textFill="#0a3d62">
-                                 <font>
-                                    <Font name="Arial Bold" size="20.0" />
-                                 </font>
-                              </Label>
-                              <Label layoutX="27.0" layoutY="114.0" text="Reg No:" textFill="TEAL">
+                              <Separator layoutX="234.0" layoutY="53.0" orientation="VERTICAL" prefHeight="143.0" prefWidth="15.0" />
+                              <Separator layoutX="482.0" layoutY="51.0" orientation="VERTICAL" prefHeight="156.0" prefWidth="2.0" />
+                              <Label layoutX="27.0" layoutY="114.0" text="Departmnet:" textFill="TEAL">
                                  <font>
                                     <Font name="Arial Bold" size="13.0" />
                                  </font>
                               </Label>
                               <TextField layoutX="27.0" layoutY="139.0" prefHeight="25.0" prefWidth="188.0" promptText="Reg No" />
-                              <Label layoutX="27.0" layoutY="183.0" text="Course:" textFill="TEAL">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="27.0" layoutY="208.0" prefHeight="25.0" prefWidth="188.0" promptText="Course" />
-                              <Label layoutX="27.0" layoutY="253.0" text="Date of Birth:" textFill="TEAL">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="27.0" layoutY="278.0" prefHeight="25.0" prefWidth="188.0" promptText="DOB" />
-                              <Label layoutX="27.0" layoutY="324.0" text="Sex:" textFill="TEAL">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="27.0" layoutY="349.0" prefHeight="25.0" prefWidth="188.0" promptText="sex" />
-                              <Label layoutX="262.0" layoutY="61.0" text="Parent Name:" textFill="TEAL">
+                              <Label layoutX="262.0" layoutY="61.0" text="Total subjects:" textFill="TEAL">
                                  <font>
                                     <Font name="Arial Bold" size="13.0" />
                                  </font>
                               </Label>
                               <TextField layoutX="262.0" layoutY="86.0" prefHeight="25.0" prefWidth="188.0" promptText="parent" />
-                              <Label layoutX="264.0" layoutY="121.0" text="Relationship:" textFill="TEAL">
+                              <Label layoutX="264.0" layoutY="121.0" text="Phone:" textFill="TEAL">
                                  <font>
                                     <Font name="Arial Bold" size="13.0" />
                                  </font>
                               </Label>
                               <TextField layoutX="264.0" layoutY="146.0" prefHeight="25.0" prefWidth="188.0" promptText="relation" />
-                              <Label layoutX="264.0" layoutY="190.0" text="Phone:" textFill="TEAL">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="264.0" layoutY="215.0" prefHeight="25.0" prefWidth="188.0" promptText="phone" />
-                              <Label layoutX="264.0" layoutY="260.0" text="Region:" textFill="TEAL">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="264.0" layoutY="285.0" prefHeight="25.0" prefWidth="188.0" promptText="region" />
-                              <Label layoutX="264.0" layoutY="331.0" text="Occupation:" textFill="TEAL">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="264.0" layoutY="356.0" prefHeight="25.0" prefWidth="188.0" promptText="ocupation" />
-                              <Label layoutX="514.0" layoutY="62.0" text="Dom Name:" textFill="TEAL">
+                              <Label layoutX="514.0" layoutY="62.0" text="Education Level:" textFill="TEAL">
                                  <font>
                                     <Font name="Arial Bold" size="13.0" />
                                  </font>
                               </Label>
                               <TextField layoutX="514.0" layoutY="87.0" prefHeight="25.0" prefWidth="188.0" promptText="Dom Name" />
-                              <Label layoutX="516.0" layoutY="122.0" text="Dom ID:" textFill="TEAL">
+                              <Label layoutX="516.0" layoutY="122.0" text="Gender:" textFill="TEAL">
                                  <font>
                                     <Font name="Arial Bold" size="13.0" />
                                  </font>
                               </Label>
                               <TextField layoutX="516.0" layoutY="147.0" prefHeight="25.0" prefWidth="188.0" promptText="Dom ID" />
-                              <Label layoutX="516.0" layoutY="191.0" text="Room No:" textFill="TEAL">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="516.0" layoutY="216.0" prefHeight="25.0" prefWidth="188.0" promptText="Room No" />
-                              <Label layoutX="516.0" layoutY="261.0" text="Leadership:" textFill="TEAL">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="516.0" layoutY="286.0" prefHeight="25.0" prefWidth="188.0" promptText="Leadership" />
-                              <Label layoutX="516.0" layoutY="332.0" text="Bed No:" textFill="TEAL">
-                                 <font>
-                                    <Font name="Arial Bold" size="13.0" />
-                                 </font>
-                              </Label>
-                              <TextField layoutX="516.0" layoutY="357.0" prefHeight="25.0" prefWidth="188.0" promptText="Bed No" />
-                              <Button layoutX="571.0" layoutY="404.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: teal;" text="Add Student" textFill="WHITE">
+                              <Button layoutX="571.0" layoutY="201.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: teal;" text="Add Teacher" textFill="WHITE">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
