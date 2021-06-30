@@ -12,14 +12,14 @@
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="996.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="advancedlevel.DashboardController">
+<AnchorPane id="AnchorPane" prefHeight="606.0" prefWidth="996.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="advancedlevel.DashboardController">
    <children>
       <MenuBar layoutX="187.0" layoutY="88.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
@@ -355,21 +355,66 @@
                      <children>
                         <Pane layoutX="26.0" layoutY="68.0" prefHeight="424.0" prefWidth="258.0" style="-fx-background-color: white; -fx-border-style: dashed;">
                            <children>
-                              <ImageView fitHeight="232.0" fitWidth="257.0" pickOnBounds="true">
-                                 <image>
-                                    <Image url="@img/staf.png" />
-                                 </image>
-                              </ImageView>
                               <Label layoutX="39.0" layoutY="244.0" text="Student name Here" textFill="#3c6382">
                                  <font>
                                     <Font name="Arial Bold" size="20.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="14.0" layoutY="277.0" text="Course:" textFill="#3c6382">
+                              <Label layoutX="14.0" layoutY="276.0" text="Reg No;" textFill="#3c6382">
                                  <font>
-                                    <Font name="Arial Bold" size="20.0" />
+                                    <Font name="Arial Bold" size="17.0" />
                                  </font>
                               </Label>
+                              <Label layoutX="119.0" layoutY="278.0" text="BTXY1234" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="306.0" text="Course:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="308.0" text="PCM" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="336.0" text="Phone:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="338.0" text="0743196599" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="363.0" text="Birth date:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="365.0" text="10/12/2020" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="390.0" text="Sex:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="117.0" layoutY="392.0" text="male" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="232.0" fitWidth="250.0" layoutX="3.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@img/std2.png" />
+                                 </image>
+                              </ImageView>
                            </children>
                         </Pane>
                         <Label layoutX="26.0" layoutY="27.0" text="Form 5 students:" textFill="#3c6382">
@@ -382,13 +427,15 @@
                               <Font size="16.0" />
                            </font>
                         </Button>
-                        <TableView layoutX="328.0" layoutY="68.0" prefHeight="424.0" prefWidth="531.0">
+                        <TableView layoutX="309.0" layoutY="68.0" prefHeight="424.0" prefWidth="561.0">
                           <columns>
                             <TableColumn prefWidth="50.0" text="No:" />
-                            <TableColumn prefWidth="106.0" text="Fullname" />
-                              <TableColumn prefWidth="106.0" text="RegNo" />
-                              <TableColumn prefWidth="106.0" text="Course" />
-                              <TableColumn prefWidth="106.0" text="Fullname" />
+                            <TableColumn prefWidth="97.0" text="Fullname" />
+                              <TableColumn prefWidth="96.0" text="RegNo" />
+                              <TableColumn prefWidth="81.0" text="Course" />
+                              <TableColumn minWidth="0.0" prefWidth="97.0" text="DateBirth" />
+                              <TableColumn minWidth="0.0" prefWidth="88.0" text="Phone" />
+                              <TableColumn minWidth="0.0" prefWidth="50.0" text="sex" />
                           </columns>
                         </TableView>
                         <Button layoutX="713.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="146.0" style="-fx-background-color: #3c6382;" text="Add New Form 5" textFill="WHITE">
@@ -406,10 +453,1536 @@
                               <Font size="16.0" />
                            </font>
                         </Button>
+                        <Button layoutX="230.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 10; -fx-background-color: #48dbfb;" text="8" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Button>
                      </children>
                   </AnchorPane>
             </content>
           </Tab>
+            <Tab text="form6">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="26.0" layoutY="68.0" prefHeight="424.0" prefWidth="258.0" style="-fx-background-color: white; -fx-border-style: dashed;">
+                           <children>
+                              <ImageView fitHeight="232.0" fitWidth="250.0" layoutX="3.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@img/std2.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="39.0" layoutY="244.0" text="Student name Here" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="276.0" text="Reg No;" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="278.0" text="BTXY1234" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="306.0" text="Course:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="308.0" text="PCM" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="336.0" text="Phone:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="338.0" text="0743196599" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="363.0" text="Birth date:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="365.0" text="10/12/2020" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="390.0" text="Sex:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="117.0" layoutY="392.0" text="male" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="26.0" layoutY="27.0" text="Form 6 Students:" textFill="#3c6382">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="79.0" layoutY="511.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="170.0" style="-fx-background-color: #3c6382;" text="View Profile" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TableView layoutX="309.0" layoutY="68.0" prefHeight="424.0" prefWidth="561.0">
+                           <columns>
+                              <TableColumn prefWidth="50.0" text="No:" />
+                              <TableColumn prefWidth="97.0" text="Fullname" />
+                              <TableColumn prefWidth="96.0" text="RegNo" />
+                              <TableColumn prefWidth="81.0" text="Course" />
+                              <TableColumn minWidth="0.0" prefWidth="97.0" text="DateBirth" />
+                              <TableColumn minWidth="0.0" prefWidth="88.0" text="Phone" />
+                              <TableColumn minWidth="0.0" prefWidth="50.0" text="sex" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="713.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="146.0" style="-fx-background-color: #3c6382;" text="Add New form 6" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="556.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="747.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #48dbfb;" text="Update" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="224.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 10; -fx-background-color: #48dbfb;" text="8" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Teacher">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="26.0" layoutY="68.0" prefHeight="424.0" prefWidth="258.0" style="-fx-background-color: white; -fx-border-style: dashed;">
+                           <children>
+                              <ImageView fitHeight="232.0" fitWidth="257.0" layoutX="-4.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@img/staf.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="39.0" layoutY="244.0" text="Staff name Here!!" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="281.0" text="Department" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="283.0" text="Academic" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="319.0" text="Subjects:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="321.0" text="6" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="358.0" text="Phone:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="360.0" text="0743196599" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="390.0" text="Sex:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="117.0" layoutY="392.0" text="male" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="26.0" layoutY="27.0" text="Available Teachers:" textFill="#3c6382">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="79.0" layoutY="511.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="170.0" style="-fx-background-color: #3c6382;" text="View Profile" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TableView layoutX="309.0" layoutY="68.0" prefHeight="424.0" prefWidth="561.0">
+                           <columns>
+                              <TableColumn prefWidth="50.0" text="No:" />
+                              <TableColumn prefWidth="97.0" text="Fullname" />
+                              <TableColumn prefWidth="96.0" text="Department" />
+                              <TableColumn prefWidth="81.0" text="Education" />
+                              <TableColumn minWidth="0.0" prefWidth="97.0" text="Phone" />
+                              <TableColumn minWidth="0.0" prefWidth="88.0" text="subjects" />
+                              <TableColumn minWidth="0.0" prefWidth="50.0" text="sex" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="694.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="165.0" style="-fx-background-color: #3c6382;" text="Add New Teacher" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="556.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="747.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #48dbfb;" text="Update" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="253.0" layoutY="29.0" mnemonicParsing="false" style="-fx-background-radius: 10; -fx-background-color: #48dbfb;" text="8" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="profile5">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="26.0" layoutY="68.0" prefHeight="424.0" prefWidth="258.0" style="-fx-background-color: white; -fx-border-style: dashed;">
+                           <children>
+                              <ImageView fitHeight="232.0" fitWidth="250.0" layoutX="3.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@img/std2.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="39.0" layoutY="244.0" text="Student name Here" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="276.0" text="Reg No;" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="278.0" text="BTXY1234" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="306.0" text="Course:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="308.0" text="PCM" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="336.0" text="Phone:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="338.0" text="0743196599" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="363.0" text="Birth date:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="365.0" text="10/12/2020" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="390.0" text="Sex:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="117.0" layoutY="392.0" text="male" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="26.0" layoutY="27.0" text="Form 5 Student Profile:" textFill="#3c6382">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="542.0" layoutY="19.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="141.0" style="-fx-background-color: #3c6382;" text="View All Form 5" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="27.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="181.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #48dbfb;" text="Update" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="719.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: teal;" text="Add New Form 5" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TabPane layoutX="313.0" layoutY="68.0" prefHeight="426.0" prefWidth="545.0" tabClosingPolicy="UNAVAILABLE">
+                          <tabs>
+                            <Tab style="-fx-background-color: #82ccdd; -fx-color: red;" text="ParentInfo">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Parent Information:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="Parent Fullname:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="Jozee kakulu Jozee" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Parent Phone:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="0743196599" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Parent region:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="Mwanza" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Parent Occupation:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="Farmer" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="Relationship" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="father" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Tribe" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="Zaramo" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="398.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="133.0" style="-fx-background-color: #48dbfb;" text="Update Parent" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="237.0" fitWidth="211.0" layoutX="320.0" layoutY="80.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/mzee.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                              <Tab text="Domitory">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Domitory Details:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="Dormitory Name:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="Maenedeleo" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Room No:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="102" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Domitory ID:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="DOM1234" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Bed No:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="4" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="Cleaness Day:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="Monday" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Leadership:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="None" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="359.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #48dbfb;" text="Update Dom details" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="237.0" fitWidth="211.0" layoutX="311.0" layoutY="65.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/hostel.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="ClassInfo">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Class Details:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="Class Name" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="PCM" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Class Cleaness:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="Monday" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Exams:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="3" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Teachers:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="5" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="Subjects:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="6" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Semister:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="II" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="359.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #48dbfb;" text="Update Class Details" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="237.0" fitWidth="211.0" layoutX="302.0" layoutY="65.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/logo.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="FeeInfo">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Fee Details:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="School Fee:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="70,000/=" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Contributions:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="50,000/=" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Dept: " textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="None" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Necta Exam:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="50,000/=" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="Status:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="Payed" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Sponsor:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="Private" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="359.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #48dbfb;" text="Update Fee Details" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="203.0" fitWidth="211.0" layoutX="306.0" layoutY="82.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/coin3.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Results">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Exam Results:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="Exam Name:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="Mid-Term" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Total Exams:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="6" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Class Position:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="1/130" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Grade:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="A" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="GPA:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="5.0" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Status:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="Pass" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="359.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #48dbfb;" text="Manage Results" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="203.0" fitWidth="211.0" layoutX="328.0" layoutY="84.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/excel.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                        <Separator layoutX="340.0" layoutY="488.0" prefHeight="6.0" prefWidth="500.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Profile6">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Pane layoutX="26.0" layoutY="68.0" prefHeight="424.0" prefWidth="258.0" style="-fx-background-color: white; -fx-border-style: dashed;">
+                           <children>
+                              <ImageView fitHeight="232.0" fitWidth="250.0" layoutX="3.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@img/std2.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="39.0" layoutY="244.0" text="Student name Here" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="276.0" text="Reg No;" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="278.0" text="BTXY1234" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="306.0" text="Course:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="308.0" text="PCM" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="336.0" text="Phone:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="338.0" text="0743196599" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="14.0" layoutY="363.0" text="Birth date:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="119.0" layoutY="365.0" text="10/12/2020" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="12.0" layoutY="390.0" text="Sex:" textFill="#3c6382">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="117.0" layoutY="392.0" text="male" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="26.0" layoutY="27.0" text="Form 6 Student Profile:" textFill="#3c6382">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button layoutX="542.0" layoutY="19.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="141.0" style="-fx-background-color: #3c6382;" text="View All Form 6" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="27.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #ff6b6b;" text="Delete" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="181.0" layoutY="503.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="103.0" style="-fx-background-color: #48dbfb;" text="Update" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="719.0" layoutY="18.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: teal;" text="Add New Form 6" textFill="WHITE">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <TabPane layoutX="313.0" layoutY="68.0" prefHeight="426.0" prefWidth="545.0" tabClosingPolicy="UNAVAILABLE">
+                           <tabs>
+                              <Tab style="-fx-background-color: #82ccdd; -fx-color: red;" text="ParentInfo">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Parent Information:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="Parent Fullname:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="Jozee kakulu Jozee" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Parent Phone:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="0743196599" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Parent region:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="Mwanza" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Parent Occupation:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="Farmer" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="Relationship" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="father" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Tribe" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="Zaramo" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="398.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="133.0" style="-fx-background-color: #48dbfb;" text="Update Parent" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="237.0" fitWidth="211.0" layoutX="313.0" layoutY="80.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/mzee.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Domitory">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Domitory Details:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="Dormitory Name:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="Maenedeleo" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Room No:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="102" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Domitory ID:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="DOM1234" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Bed No:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="4" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="Cleaness Day:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="Monday" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Leadership:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="None" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="359.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #48dbfb;" text="Update Dom details" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="237.0" fitWidth="211.0" layoutX="312.0" layoutY="65.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/hostel.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="ClassInfo">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Class Details:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="Class Name" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="PCM" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Class Cleaness:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="Monday" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Exams:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="3" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Teachers:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="5" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="Subjects:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="6" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Semister:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="II" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="359.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #48dbfb;" text="Update Class Details" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="237.0" fitWidth="211.0" layoutX="306.0" layoutY="73.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/logo.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="FeeInfo">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Fee Details:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="School Fee:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="70,000/=" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Contributions:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="50,000/=" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Dept: " textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="None" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Necta Exam:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="50,000/=" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="Status:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="Payed" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Sponsor:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="Private" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="359.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #48dbfb;" text="Update Fee Details" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="203.0" fitWidth="211.0" layoutX="305.0" layoutY="72.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/coin3.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                              <Tab text="Results">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="20.0" layoutY="16.0" text="Exam Results:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="20.0" />
+                                             </font>
+                                          </Label>
+                                          <Separator layoutX="20.0" layoutY="47.0" prefHeight="4.0" prefWidth="185.0" />
+                                          <Label layoutX="23.0" layoutY="64.0" text="Exam Name:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="64.0" text="Mid-Term" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="109.0" text="Total Exams:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="114.0" text="6" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="163.0" text="Class Position:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="163.0" text="1/130" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="25.0" layoutY="212.0" text="Grade:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="196.0" layoutY="212.0" text="A" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="259.0" text="GPA:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="259.0" text="5.0" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="23.0" layoutY="308.0" text="Status:" textFill="#3c6382">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="194.0" layoutY="308.0" text="Pass" textFill="TEAL">
+                                             <font>
+                                                <Font name="Arial Bold" size="17.0" />
+                                             </font>
+                                          </Label>
+                                          <Button layoutX="359.0" layoutY="328.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="172.0" style="-fx-background-color: #48dbfb;" text="Manage Results" textFill="WHITE">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Button>
+                                          <ImageView fitHeight="203.0" fitWidth="211.0" layoutX="304.0" layoutY="82.0" pickOnBounds="true">
+                                             <image>
+                                                <Image url="@img/excel.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </content>
+                              </Tab>
+                           </tabs>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </TabPane>
+                        <Separator layoutX="340.0" layoutY="488.0" prefHeight="6.0" prefWidth="500.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="AddForm5">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="24.0" layoutY="22.0" text="Add New Student:" textFill="#3c6382">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="70.0" layoutY="66.0" prefHeight="452.0" prefWidth="746.0" style="-fx-border-style: dashed; -fx-background-color: white;">
+                           <children>
+                              <Label layoutX="64.0" layoutY="12.0" text="Student Details:" textFill="#0a3d62">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="54.0" text="FullNme:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="25.0" layoutY="79.0" prefHeight="25.0" prefWidth="188.0" promptText="Fullname" />
+                              <Separator layoutX="246.0" layoutY="14.0" orientation="VERTICAL" prefHeight="378.0" prefWidth="9.0" />
+                              <Separator layoutX="493.0" layoutY="14.0" orientation="VERTICAL" prefHeight="387.0" prefWidth="5.0" />
+                              <Label layoutX="293.0" layoutY="12.0" text="Parent Details:" textFill="#0a3d62">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="554.0" layoutY="14.0" text="Dormitory Details:" textFill="#0a3d62">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="114.0" text="Reg No:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="27.0" layoutY="139.0" prefHeight="25.0" prefWidth="188.0" promptText="Reg No" />
+                              <Label layoutX="27.0" layoutY="183.0" text="Course:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="27.0" layoutY="208.0" prefHeight="25.0" prefWidth="188.0" promptText="Course" />
+                              <Label layoutX="27.0" layoutY="253.0" text="Date of Birth:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="27.0" layoutY="278.0" prefHeight="25.0" prefWidth="188.0" promptText="DOB" />
+                              <Label layoutX="27.0" layoutY="324.0" text="Sex:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="27.0" layoutY="349.0" prefHeight="25.0" prefWidth="188.0" promptText="sex" />
+                              <Label layoutX="262.0" layoutY="61.0" text="Parent Name:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="262.0" layoutY="86.0" prefHeight="25.0" prefWidth="188.0" promptText="parent" />
+                              <Label layoutX="264.0" layoutY="121.0" text="Relationship:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="264.0" layoutY="146.0" prefHeight="25.0" prefWidth="188.0" promptText="relation" />
+                              <Label layoutX="264.0" layoutY="190.0" text="Phone:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="264.0" layoutY="215.0" prefHeight="25.0" prefWidth="188.0" promptText="phone" />
+                              <Label layoutX="264.0" layoutY="260.0" text="Region:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="264.0" layoutY="285.0" prefHeight="25.0" prefWidth="188.0" promptText="region" />
+                              <Label layoutX="264.0" layoutY="331.0" text="Occupation:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="264.0" layoutY="356.0" prefHeight="25.0" prefWidth="188.0" promptText="ocupation" />
+                              <Label layoutX="514.0" layoutY="62.0" text="Dom Name:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="514.0" layoutY="87.0" prefHeight="25.0" prefWidth="188.0" promptText="Dom Name" />
+                              <Label layoutX="516.0" layoutY="122.0" text="Dom ID:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="516.0" layoutY="147.0" prefHeight="25.0" prefWidth="188.0" promptText="Dom ID" />
+                              <Label layoutX="516.0" layoutY="191.0" text="Room No:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="516.0" layoutY="216.0" prefHeight="25.0" prefWidth="188.0" promptText="Room No" />
+                              <Label layoutX="516.0" layoutY="261.0" text="Leadership:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="516.0" layoutY="286.0" prefHeight="25.0" prefWidth="188.0" promptText="Leadership" />
+                              <Label layoutX="516.0" layoutY="332.0" text="Bed No:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="516.0" layoutY="357.0" prefHeight="25.0" prefWidth="188.0" promptText="Bed No" />
+                              <Button layoutX="571.0" layoutY="404.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: teal;" text="Add Student" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Add Teacher">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="24.0" layoutY="22.0" text="Add New teacher" textFill="#3c6382">
+                           <font>
+                              <Font name="Arial Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="70.0" layoutY="66.0" prefHeight="452.0" prefWidth="746.0" style="-fx-border-style: dashed; -fx-background-color: white;">
+                           <children>
+                              <Label layoutX="64.0" layoutY="12.0" text="Student Details:" textFill="#0a3d62">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="25.0" layoutY="54.0" text="FullNme:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="25.0" layoutY="79.0" prefHeight="25.0" prefWidth="188.0" promptText="Fullname" />
+                              <Separator layoutX="246.0" layoutY="14.0" orientation="VERTICAL" prefHeight="378.0" prefWidth="9.0" />
+                              <Separator layoutX="493.0" layoutY="14.0" orientation="VERTICAL" prefHeight="387.0" prefWidth="5.0" />
+                              <Label layoutX="293.0" layoutY="12.0" text="Parent Details:" textFill="#0a3d62">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="554.0" layoutY="14.0" text="Dormitory Details:" textFill="#0a3d62">
+                                 <font>
+                                    <Font name="Arial Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="114.0" text="Reg No:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="27.0" layoutY="139.0" prefHeight="25.0" prefWidth="188.0" promptText="Reg No" />
+                              <Label layoutX="27.0" layoutY="183.0" text="Course:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="27.0" layoutY="208.0" prefHeight="25.0" prefWidth="188.0" promptText="Course" />
+                              <Label layoutX="27.0" layoutY="253.0" text="Date of Birth:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="27.0" layoutY="278.0" prefHeight="25.0" prefWidth="188.0" promptText="DOB" />
+                              <Label layoutX="27.0" layoutY="324.0" text="Sex:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="27.0" layoutY="349.0" prefHeight="25.0" prefWidth="188.0" promptText="sex" />
+                              <Label layoutX="262.0" layoutY="61.0" text="Parent Name:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="262.0" layoutY="86.0" prefHeight="25.0" prefWidth="188.0" promptText="parent" />
+                              <Label layoutX="264.0" layoutY="121.0" text="Relationship:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="264.0" layoutY="146.0" prefHeight="25.0" prefWidth="188.0" promptText="relation" />
+                              <Label layoutX="264.0" layoutY="190.0" text="Phone:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="264.0" layoutY="215.0" prefHeight="25.0" prefWidth="188.0" promptText="phone" />
+                              <Label layoutX="264.0" layoutY="260.0" text="Region:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="264.0" layoutY="285.0" prefHeight="25.0" prefWidth="188.0" promptText="region" />
+                              <Label layoutX="264.0" layoutY="331.0" text="Occupation:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="264.0" layoutY="356.0" prefHeight="25.0" prefWidth="188.0" promptText="ocupation" />
+                              <Label layoutX="514.0" layoutY="62.0" text="Dom Name:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="514.0" layoutY="87.0" prefHeight="25.0" prefWidth="188.0" promptText="Dom Name" />
+                              <Label layoutX="516.0" layoutY="122.0" text="Dom ID:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="516.0" layoutY="147.0" prefHeight="25.0" prefWidth="188.0" promptText="Dom ID" />
+                              <Label layoutX="516.0" layoutY="191.0" text="Room No:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="516.0" layoutY="216.0" prefHeight="25.0" prefWidth="188.0" promptText="Room No" />
+                              <Label layoutX="516.0" layoutY="261.0" text="Leadership:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="516.0" layoutY="286.0" prefHeight="25.0" prefWidth="188.0" promptText="Leadership" />
+                              <Label layoutX="516.0" layoutY="332.0" text="Bed No:" textFill="TEAL">
+                                 <font>
+                                    <Font name="Arial Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="516.0" layoutY="357.0" prefHeight="25.0" prefWidth="188.0" promptText="Bed No" />
+                              <Button layoutX="571.0" layoutY="404.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="142.0" style="-fx-background-color: teal;" text="Add Student" textFill="WHITE">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
         </tabs>
       </TabPane>
    </children>
