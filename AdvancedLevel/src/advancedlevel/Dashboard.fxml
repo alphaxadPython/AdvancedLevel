@@ -47,7 +47,26 @@
                   <Image url="@img/std2.png" />
                </image>
             </ImageView>
-            <Button layoutX="2.0" layoutY="113.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" text="Button" />
+            <Button layoutX="2.0" layoutY="113.0" mnemonicParsing="false" onMouseClicked="#godashboard" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #3c6382;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="2.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#goForm5" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #3c6382;" text="Form 5" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="2.0" layoutY="201.0" mnemonicParsing="false" onMouseClicked="#goForm6" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #3c6382;" text="Form 6" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
+            <Button layoutX="2.0" layoutY="258.0" mnemonicParsing="false" onMouseClicked="#goTeachers" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #3c6382;" text="Teachers" textFill="WHITE">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Button>
          </children>
       </Pane>
       <TabPane fx:id="mainTab" layoutX="117.0" layoutY="25.0" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">

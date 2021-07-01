@@ -68,5 +68,29 @@ public class DashboardController implements Initializable {
     @FXML
     private void viewForm6(MouseEvent event) {
     }
+
+    @FXML
+    private void godashboard(MouseEvent event) {
+    mainTab.getSelectionModel().select(0);
+
+    }
+
+    @FXML
+    private void goForm5(MouseEvent event) {
+     mainTab.getSelectionModel().select(1);
+
+    }
+
+    @FXML
+    private void goForm6(MouseEvent event) {
+    mainTab.getSelectionModel().select(2);
+
+    }
+
+    @FXML
+    private void goTeachers(MouseEvent event) {
+     mainTab.getSelectionModel().select(3);
+
+    }
     
 }
